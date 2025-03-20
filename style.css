@@ -23,12 +23,15 @@
     
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(63deg,#82a394,#3c2da9,#24a58f,#7feea4);
-    background-size: 240% 240%;
-    animation: gradient-animation 4s ease infinite;
+    background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
     color: #fff;
     padding: 10px;
 }
+
+
+
 
 .calculator{
     width: 100%;
