@@ -20,10 +20,10 @@ A simple **Age Calculator** built using **HTML, CSS, and JavaScript**. This web 
 4. View your exact age in **years, months, and days**.  
 
 ## 📂 Project Structure  
-/age-calculator │── index.html # Main HTML file
-│── style.css # CSS file for styling
-│── script.js # JavaScript file for age calculation
-
+age-calculator/  
+│── index.html   # Main HTML file  
+│── style.css    # CSS file for styling  
+│── script.js    # JavaScript file for age calculation 
 
 ## 🎨 UI Preview  
 The app features a **smooth gradient background animation** and a clean input box for user interaction.  
