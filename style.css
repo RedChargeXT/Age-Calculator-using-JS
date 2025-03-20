@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+
+.container{
+    
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(63deg,#82a394,#3c2da9,#24a58f,#7feea4);
+    background-size: 240% 240%;
+    animation: gradient-animation 4s ease infinite;
+    color: #fff;
+    padding: 10px;
+}
+
+.calculator{
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.calculator.h1{
+    font-size: 60px;
+
+}
+
+#agecalci{
+    color: #24a58f;
+}
+
+
+  
+  
