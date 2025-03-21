@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @keyframes gradient-animation {
     0% {
       background-position: 0% 50%;
@@ -10,93 +10,126 @@
     100% {
       background-position: 0% 50%;
     }
-  }
+}
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Poppins, sans-serif;
 }
 
-
-.container{
-    
+.container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+    background: linear-gradient(300deg, deepskyblue, darkviolet, blue);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
 }
 
-
-
-
-.calculator{
+.calculator {
     width: 100%;
     max-width: 600px;
+    padding: 20px;
     margin-left: 10%;
-    margin-top: 10%;
 }
 
-.calculator.h1{
-    font-size: 60px;
-
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        justify-content: center;
+    }
+    
+    .calculator {
+        margin-left: 0; /* Remove left margin on mobile */
+    }
 }
 
-#agecalci{
+.calculator h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .calculator h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator h1 {
+        font-size: 28px;
+    }
+}
+
+#agecalci {
     color: #ffff76;
 }
 
-.input-box{
-  margin: 40px 0;
-  padding: 35px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.3);
-  display: flex;
-  align-items: center;
+.input-box {
+    margin: 40px 0;
+    padding: 25px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
-.input-box input{
-  flex: 1;
-  margin-right: 20px;
-  padding: 14px 20px;
-  border: 0;
-  outline: 0;
-  font-size: 18px;
-  border-radius: 5px;
-  position: relative;
-  cursor: pointer;
 
+.input-box input {
+    flex: 1;
+    min-width: 200px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
 }  
   
-.input-box button{
-  background: #ffff76;
-  border: 0;
-  outline: 0;
-  padding: 15px 30px;
-  border-radius: 5px;
-  font-weight: 500;
-  color: #333;
-  cursor: pointer;
+.input-box button {
+    background: #ffff76;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    white-space: nowrap;
 }
+
 .input-box input::-webkit-calendar-picker-indicator {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: auto;
-  height: auto;
-  position: absolute;
-  background-position: calc(100% - 10px);
-  background-size: 30px;
-  cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
 }
 
-#result{
-  font-size: 20px;
+#result {
+    font-size: 20px;
+    line-height: 1.5;
 }
 
-#result span{
-  color: #ffff76;
+@media (max-width: 480px) {
+    #result {
+        font-size: 18px;
+    }
+}
+
+#result span {
+    color: #ffff76;
 }
